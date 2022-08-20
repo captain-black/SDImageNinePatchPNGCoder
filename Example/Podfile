@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'SDImage9PatchPNGCoder_Example' do
+  pod 'SDImage9PatchPNGCoder', :path => '../'
+
+  target 'SDImage9PatchPNGCoder_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
