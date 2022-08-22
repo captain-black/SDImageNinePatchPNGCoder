@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'SDImage9PatchPNGCoder'
   s.version          = '0.1.0'
-  s.summary          = 'SDImage9PatchPNGCoder inherits from SDImageAPNGCoder, it can parse the Nine Patch chunk in the PNG file and set the padding data to the sd_extendedObject of the UIImage object.'
+  s.summary          = 'Parse Nine Patch chunk in the PNG file.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  SDImage9PatchPNGCoder inherits from SDImageAPNGCoder, it can parse the Nine Patch chunk in the PNG file and set the padding data to the sd_extendedObject of the UIImage object.
                        DESC
 
   s.homepage         = 'https://github.com/captain-black/SDImageNinePatchPNGCoder'
