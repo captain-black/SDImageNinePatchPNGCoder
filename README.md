@@ -20,6 +20,31 @@ it, simply add the following line to your Podfile:
 pod 'SDImage9PatchPNGCoder'
 ```
 
+## Usage
+1. Remove SDImageAPNGCoder and add SDImage9PatchPNGCoder instead,
+```objective-c
+[SDImageCodersManager.sharedManager removeCoder:SDImageAPNGCoder.sharedCoder];
+id<SDImageCoder> coder = [SDImage9PatchPNGCoder sharedCoder];
+[SDImageCodersManager.sharedManager addCoder:coder];
+```
+2. Read the UIImage proptery sd_extendedObject.
+```objective-c
+__weak typeof(self) wself = self;
+[SDWebImageManager.sharedManager loadImageWithURL:url
+											options:0
+											context:nil
+											progress:nil
+											completed:^(UIImage * _Nullable image, NSData * _Nullable data, NSError * _Nullable error, SDImageCacheType cacheType, BOOL finished, NSURL * _Nullable imageURL) {
+		__strong typeof(wself) self = wself;
+		NSDictionary* dic = (NSDictionary*)image.sd_extendedObject;
+		NSValue* value = dic[@"padding"];
+		UIEdgeInsets insets = [value UIEdgeInsetsValue];
+		image = [image resizableImageWithCapInsets:insets
+									resizingMode:UIImageResizingModeStretch];
+		self.chatBubbleImageView.image = image;
+}];
+```
+
 ## Author
 
 Captain Black, captainblack.soul@gmail.com
