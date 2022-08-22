@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02CFE2A2DEB9938D6518C20B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		02CFE2A2DEB9938D6518C20B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		4F3D2CB133058E5D8BC3E32B /* Pods_SDImage9PatchPNGCoder_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDImage9PatchPNGCoder_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* SDImage9PatchPNGCoder_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDImage9PatchPNGCoder_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -58,7 +58,7 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		63A3B6D7409C783D2F4BB6A8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		63A3B6D7409C783D2F4BB6A8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B57E9ECC4C81114683E986A /* Pods_SDImage9PatchPNGCoder_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDImage9PatchPNGCoder_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 		AAA44F405DD1F4866C7F7FEE /* Pods-SDImage9PatchPNGCoder_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDImage9PatchPNGCoder_Example.release.xcconfig"; path = "Target Support Files/Pods-SDImage9PatchPNGCoder_Example/Pods-SDImage9PatchPNGCoder_Example.release.xcconfig"; sourceTree = "<group>"; };
 		AEABDAF877760BFA16B66DA4 /* Pods-SDImage9PatchPNGCoder_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDImage9PatchPNGCoder_Example.debug.xcconfig"; path = "Target Support Files/Pods-SDImage9PatchPNGCoder_Example/Pods-SDImage9PatchPNGCoder_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D257C2E5000BBA3C943E7BAC /* Pods-SDImage9PatchPNGCoder_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDImage9PatchPNGCoder_Tests.release.xcconfig"; path = "Target Support Files/Pods-SDImage9PatchPNGCoder_Tests/Pods-SDImage9PatchPNGCoder_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		F55C4259F1842204D7B20DEE /* SDImage9PatchPNGCoder.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SDImage9PatchPNGCoder.podspec; path = ../SDImage9PatchPNGCoder.podspec; sourceTree = "<group>"; };
+		F55C4259F1842204D7B20DEE /* SDImage9PatchPNGCoder.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SDImage9PatchPNGCoder.podspec; path = ../SDImage9PatchPNGCoder.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,7 +193,6 @@
 				A802C4349D1B7AF2F374F7CD /* Pods-SDImage9PatchPNGCoder_Tests.debug.xcconfig */,
 				D257C2E5000BBA3C943E7BAC /* Pods-SDImage9PatchPNGCoder_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -259,6 +258,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -366,10 +366,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SDImage9PatchPNGCoder_Example/Pods-SDImage9PatchPNGCoder_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SDImage9PatchPNGCoder/SDImage9PatchPNGCoder.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDImage9PatchPNGCoder.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
